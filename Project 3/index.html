@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <title>THE CODE REVIEW</title>
@@ -9,33 +9,49 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet"> 
     </head>
+    
     <body>
+        <header>
+            <h2>THE CODE REVIEW</h2>
+        </header>
         <div id="container">
-            <h2>Signup for our newsletter</h2>
-            <p>Get the latest news on how your code is doing right in your inbox</p>
-            <hr>
+            <section>
+                <h2>Signup for our newsletter</h2>
+                <p>Get the latest news on how your code is doing right in your inbox</p>
+            </section>
+        <hr>    
         <form>
             <fieldset>
                 <legend>Contact Information</legend>
 
-                    <div id="col-1">
+                    <div class="col-1">
                         <label for="name" class="user-name">Full Name</label>
-                        <input type="text" id="name" name="user-name" placeholder="Required">
-                    
+                        <input required type="text" id="name" name="user-name" placeholder="Required" class="input-1">
+                    </div>
+
+                    <div class="col-1">
                         <label for="email">Email Address</label>
-                        <input type="email" id="email" name="user-email" placeholder="Required" required="user@email.com">
+                        <input required type="email" id="email" name="user-email" placeholder="Required" class="input-1">
+                    </div>
 
+                    <div class="col-1">
                         <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="user-phone">
+                        <input type="tel" id="phone" name="user-phone" class="input-1">
+                    </div>
 
+                    <div class="col-1">
                         <label for="address">Street Address</label>
-                        <input type="text" id="address" name="user-address">
+                        <input type="text" id="address" name="user-address" class="input-1">
+                    </div>
 
+                    <div class="col-1">
                         <label for="city">City</label>
-                        <input type="text" id="city" name="user-city">
+                        <input type="text" id="city" name="user-city" class="input-1">
+                    </div>
 
+                    <div class="col-1">
                         <label for="state">State</label>
-                        <select id="state" name="US-States" placeholder="Choose State">
+                        <select id="state" name="US-States" class="input-1">
                             <option>Choose State</option>
                             <option value="AL">Alabama</option>
                             <option value="AK">Alaska</option>
@@ -49,7 +65,7 @@
                             <option value="FL">Florida</option>
                             <option value="GA">Georgia</option>
                             <option value="HI">Hawaii</option>
-                            <option value="ID">Idaho</op<tion>
+                            <option value="ID">Idaho</option>
                             <option value="IL">Illinois</option>
                             <option value="IN">Indiana</option>
                             <option value="IA">Iowa</option>
@@ -89,9 +105,11 @@
                             <option value="WI">Wisconsin</option>
                             <option value="WY">Wyoming</option>
                         </select>
-                        
+                    </div>
+
+                    <div class="col-1"> 
                         <label for="zip">Zip Code</label>
-                        <input type="text" id="zip" name="user-zip">
+                        <input type="text" id="zip" name="user-zip" class="input-1">
                     </div>
             </fieldset>
 
@@ -101,7 +119,7 @@
                 <legend>Newsletter</legend>
                 <div>Select the newsletters you would like to recieve</div>
 
-                <div id="col-2">
+                <div class="col-2">
                     <input type="checkbox" id="html" name="html-news"><label for="html">HTML News</label><br>
 
                     <input type="checkbox" id="css" name="css-news"><label for="css">CSS News</label><br>
@@ -110,12 +128,13 @@
 
                     <div>Newsletter format</div>
 
-                    <input type="radio" id="html" name="html"><label for="html">HTML</label><br>
+                    <input type="radio" id="html-1" name="html"><label for="html-1">HTML</label><br>
 
                     <input type="radio" id="pln-txt" name="pln-txt"><label for="pln-txt">Plain Text</label><br>
+                    <br>
 
                     <label for="topics">Other topics you'd like to hear about</label>
-                    <textarea type="text" id="topics" name="other-topics"></textarea>
+                    <textarea id="topics" name="other-topics"></textarea>
                 </div>
             </fieldset>
             
@@ -123,7 +142,9 @@
                 <button type="submit" class="btn">Sign Up</button>
             </fieldset>
         </form> 
-        </div>    
+        </div> 
+        
+        <footer>Copywright The Code Review</footer>   
+
     </body>
-    <footer>Copywright The Code Review</footer>
 </html>
